@@ -347,6 +347,21 @@ header {
   z-index=8;
 }
 
+.home{
+	font-size: 8em;
+	opacity: .8;
+	color: gray;
+	text-decoration: ;
+	font-weight: lighter;
+	width: 100%;
+}
+
+.home_small{
+	font-size: 2em;
+	opacity: .75;
+	font-weight: lighter;
+	width: 100%;
+}
 p {
   width: 65%;
   margin: 0 auto 20px;
