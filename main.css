@@ -416,6 +416,14 @@ p {
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
 }
+.textBoxTitle-centered{
+	color: #00000;
+	font-size: 34px;
+	opacity: 0.88;
+	font-family: "Open Sans" sans-serif;
+	font-weight: 200;
+	align-content: center;
+}
 
 .contactTitle{
 	color: #00000;
