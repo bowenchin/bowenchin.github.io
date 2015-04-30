@@ -258,11 +258,13 @@ nav ul{
 nav ul li{
 	display: inline-block;
 	padding: 20px;
+	z-index = 100;
 }
 
 nav ul li:hover{
 	background-color: #505050;
 	opacity: .55;
+	z-index = 100;
 }
 
 section{
@@ -304,18 +306,22 @@ section{
 @media screen and (max-width: 541px){
 	nav ul{
 		max-height: 0px;
+		z-index = 100;
 	}
 	.showing{
 		max-height: 30em;
+		z-index = 100;
 	}
 	nav ul li{
 		box-sizing: border-box;
 		width: 100%;
 		padding: 15px;
+		z-index = 100;
 	}
 	
 	.handle{
 		display: block;
+		z-index = 100;
 	}
 }
 
@@ -354,6 +360,7 @@ header {
 	text-decoration: ;
 	font-weight: lighter;
 	width: 100%;
+	z-index = 10;
 }
 
 .home_small{
@@ -361,6 +368,7 @@ header {
 	opacity: .75;
 	font-weight: lighter;
 	width: 100%;
+	z-index = 10;
 }
 p {
   width: 65%;
