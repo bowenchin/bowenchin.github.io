@@ -377,6 +377,7 @@ p {
 
 #mainDark{
 	background-color: #858585;
+	opacity: .8;
 	width: 100%;
 	margin: 0 auto 10px;
 }
