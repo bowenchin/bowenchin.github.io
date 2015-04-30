@@ -251,20 +251,20 @@ nav ul{
 	-moz-transition: max-height 0.4s;
 	-o-: max-height 0.4s;
 	transition: max-height 0.4s;
-	z-index = 100;
+	z-index : 100;
 	position: fixed;
 	width:100%
 }
 nav ul li{
 	display: inline-block;
 	padding: 20px;
-	z-index = 100;
+	z-index : 100;
 }
 
 nav ul li:hover{
 	background-color: #505050;
 	opacity: .55;
-	z-index = 100;
+	z-index : 100;
 }
 
 section{
@@ -306,22 +306,22 @@ section{
 @media screen and (max-width: 541px){
 	nav ul{
 		max-height: 0px;
-		z-index = 100;
+		z-index: 100;
 	}
 	.showing{
 		max-height: 30em;
-		z-index = 100;
+		z-index: 100;
 	}
 	nav ul li{
 		box-sizing: border-box;
 		width: 100%;
 		padding: 15px;
-		z-index = 100;
+		z-index: 100;
 	}
 	
 	.handle{
 		display: block;
-		z-index = 100;
+		z-index: 100;
 	}
 }
 
@@ -350,7 +350,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  z-index=8;
+  z-index: 8;
 }
 
 .home{
@@ -360,7 +360,7 @@ header {
 	text-decoration: ;
 	font-weight: lighter;
 	width: 100%;
-	z-index = 10;
+	z-index: 10;
 }
 
 .home_small{
@@ -368,7 +368,7 @@ header {
 	opacity: .75;
 	font-weight: lighter;
 	width: 100%;
-	z-index = 10;
+	z-index: 10;
 }
 p {
   width: 65%;
@@ -376,18 +376,18 @@ p {
 }
 
 #mainDark{
-	background-color: #dbdbdb;
+	background-color: #858585;
 	width: 100%;
 	margin: 0 auto 10px;
-	
-
 }
+
 #mainLight{
 	background-color: white;
 	width: 100%;
 	margin: 0 auto 20px;
 	
 }
+
 
 #socialMedia{
 	background-color: white;
@@ -399,11 +399,21 @@ p {
 
 .wideImage{
 	width: 100%;
+	z-index: 5;
 }
 
 .module{
 	position: relative;
 	z-index: 1;
+}
+
+.map{
+	width: 65%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	
 }
 
 .textBox{
@@ -420,9 +430,10 @@ p {
 .textBoxTitle{
 	color: #00000;
 	font-size: 34px;
-	opacity: 0.88;
+	opacity: .9;
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
+	z-index: 2;
 }
 
 .contactTitle{
@@ -433,24 +444,25 @@ p {
 	font-weight: 200;
 	text-align: center;
 	line-height: 100%;
+	z-index: 2;
 }
 
 .textBoxText{
 	color: #000000;
-	font-size: 14px;
-	opacity: 0.88;
+	font-size: 16px;
+	opacity: 1;
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
+	z-index: 2;
 }
 
 #content {
 	padding-bottom:60px; /* Height of the footer element */
 }
 #footer {
-	height:50px;
-	background: #000000;
-	opacity:.75;
-	z-index:10;
+	height:45px;
+	background: #424242;
+	z-index:5;
 	position:relative;
 	margin-top:-80px;
 	padding-top:20px;
