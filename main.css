@@ -485,6 +485,7 @@ form {
 }
  input, textarea {
   border: 3px solid;
+  border-color: black;
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
@@ -513,6 +514,7 @@ textarea {
 }
  [type="submit"]:hover {
   background: blue;
+  border-color: blue;
 }
  .contact-info-group label {
   width: 50%;
