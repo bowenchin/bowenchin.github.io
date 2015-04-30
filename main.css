@@ -455,12 +455,12 @@ p {
 }
 
 #content {
-	padding-bottom:60px; /* Height of the footer element */
+	padding-bottom:45px; /* Height of the footer element */
 }
 #footer {
 	height:45px;
 	background: #424242;
-	z-index:5;
+	z-index:1;
 	position:relative;
 	margin-top:-80px;
 	padding-top:20px;
