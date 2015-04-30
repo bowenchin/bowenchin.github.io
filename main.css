@@ -376,17 +376,17 @@ p {
 }
 
 #mainDark{
-	background-color: #858585;
-	opacity: .65;
+	background-color: #969696;
 	width: 100%;
 	margin: 0 auto 10px;
+	z-index: 0;
 }
 
 #mainLight{
 	background-color: white;
 	width: 100%;
 	margin: 0 auto 20px;
-	
+	z-index: 0;
 }
 
 
@@ -431,7 +431,6 @@ p {
 .textBoxTitle{
 	color: #00000;
 	font-size: 34px;
-	opacity: 1;
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
 	z-index: 2;
@@ -440,7 +439,6 @@ p {
 .contactTitle{
 	color: #00000;
 	font-size: 34px;
-	opacity: 0.88;
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
 	text-align: center;
@@ -451,7 +449,6 @@ p {
 .textBoxText{
 	color: #000000;
 	font-size: 16px;
-	opacity: 1;
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
 	z-index: 2;
@@ -503,7 +500,7 @@ textarea {
   
 }
  .submit-wrap {
-  text-align: right;
+  text-align: center;
   
 }
  [type="submit"] {
@@ -511,8 +508,8 @@ textarea {
   color: white;
   font-size: 18px;
   text-transform: uppercase;
-  width: 30%;
-  float: left;
+  width: 100%;
+  float: center;
   margin-top: 10px;
 }
  [type="submit"]:hover {
