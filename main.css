@@ -357,7 +357,6 @@ header {
 	font-size: 6em;
 	opacity: .8;
 	color: gray;
-	text-decoration: ;
 	font-weight: lighter;
 	width: 100%;
 	z-index: 10;
@@ -390,11 +389,16 @@ p {
 }
 
 
-#socialMedia{
-	background-color: white;
-	display: block;
-	width: 65%;
-	margin-left: 30%;
+.socialMedia{
+	width: 10%;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 0px;
 }	
 
 
@@ -429,7 +433,7 @@ p {
 }
 
 .textBoxTitle{
-	color: #00000;
+	color: #000000;
 	font-size: 34px;
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
@@ -437,7 +441,7 @@ p {
 }
 
 .contactTitle{
-	color: #00000;
+	color: #000000;
 	font-size: 34px;
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
