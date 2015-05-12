@@ -369,7 +369,6 @@ header {
 	z-index: 10;
 }
 p {
-  width: 50%;
   margin: 0 auto 20px;
 }
 
@@ -459,6 +458,13 @@ p {
 	font-family: "Open Sans" sans-serif;
 	font-weight: 10;
 	z-index: 2;
+}
+#content-half{	
+  padding-bottom:60px; /* Height of the footer element */
+  width:50%;
+  margin-right:auto;
+  margin-left:auto;
+  justify-content:center;
 }
 
 #content {
