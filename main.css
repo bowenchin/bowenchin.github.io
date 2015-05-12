@@ -665,7 +665,8 @@ textarea {
 	}
 
 	.textBox-about {
-		top:17%;
+		top:10%;
+    background:none;
 	}
 
 	.textBoxText-about {
@@ -685,5 +686,8 @@ textarea {
 		font-size:24px;
     text-align: center;
     vertical-align: middle;
+		top:5%;
+    background:none;
+	}
 	}
 }
