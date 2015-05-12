@@ -245,15 +245,15 @@ nav ul{
 	padding: 0;
 	text-align: center;
 	margin: 0px;
-	margin-bottom:5px;
+	margin-bottom:10px;
 	-webkit-transition: max-height 0.4s;
 	-ms-transition: max-height 0.4s;
 	-moz-transition: max-height 0.4s;
 	-o-: max-height 0.4s;
 	transition: max-height 0.4s;
 	z-index : 100;
-	position: fixed;
-	width:100%
+	position: absolute;
+	width:100%;  
 }
 nav ul li{
 	display: inline-block;
@@ -280,11 +280,10 @@ section{
 	text-align: center;
 	color: white;
 	background: #424242;
-	padding: 3% 0px .02px 0;
+	padding: 5% 0px 1px 0px;
 	z-index: -5;
 	font-size: 50px;
 	position: relative;
-
 }
 
 .handle{
