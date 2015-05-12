@@ -430,12 +430,29 @@ p {
     -webkit-transition: all 1s;
 	transition: all 1s;
   display:inline-block;
+  color:black;
+  margin-left:20%;
+  margin-right:20%;
+}
+
+#textBox-about{
+	position:absolute;
+  background:rgba(0,0,0,.45);
+	top:25%;
+	padding:2%;
+  border-radius:5px;
+  display:inline-block;
+	z-index: 2;
+	-moz-transition: all 1s;
+    -webkit-transition: all 1s;
+	transition: all 1s;
+  display:inline-block;
   color:white;
   margin-left:20%;
   margin-right:20%;
 }
 
-#textBox:hover {
+#textBox-about:hover {
 	background: rgba(0,0,0,.75);
 }
 
@@ -458,6 +475,14 @@ p {
 
 #textBoxLeft:hover {
 	background: rgba(0,0,0,75);
+}
+
+.textBoxTitle-about{
+	font-size: 45px;
+	font-family: "Open Sans" sans-serif;
+	font-weight: 200;
+	z-index: 2;
+  text-align:center;
 }
 
 .textBoxTitle{
@@ -484,6 +509,14 @@ p {
 	font-weight: 10;
 	z-index: 2;
 }
+
+.textBoxText-about{
+	font-size: 16px;
+	font-family: "Open Sans" sans-serif;
+	font-weight: 10;
+	z-index: 2;
+}
+
 #content-half{	
   padding-bottom:60px; /* Height of the footer element */
   width:75%;
@@ -630,15 +663,15 @@ textarea {
 		font-size:18px;
 	}
 
-	.textBox {
+	.textBox-about {
 		top:17%;
 	}
 
-	.textBoxText {
+	.textBoxText-about {
 		display:none;
 	}
   
-  .textBoxTitle{
+  .textBoxTitle-about{
 
     color:white;
   }
