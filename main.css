@@ -422,7 +422,7 @@ p {
 
 #textBox{
 	position:absolute;
-  background:rgba(0,0,0,.65);
+  background:rgba(0,0,0,.45);
 	top:25%;
 	padding:2%;
   border-radius:5px;
@@ -435,6 +435,31 @@ p {
   color:white;
   margin-left:20%;
   margin-right:20%;
+}
+
+#textBox:hover {
+	background: rgba(0,0,0,.75);
+}
+
+#textBoxLeft{
+	position:absolute;
+  background:rgba(0,0,0,.45);
+	width:30%;
+  top:15%;
+  left:5%;
+	padding:2%;
+  border-radius:5px;
+  display:inline-block;
+	z-index: 2;
+	-moz-transition: all 1s;
+    -webkit-transition: all 1s;
+	transition: all 1s;
+  display:inline-block;
+  color:white;
+}
+
+#textBoxLeft:hover {
+	background: rgba(0,0,0,75);
 }
 
 .textBoxTitle{
