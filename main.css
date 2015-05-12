@@ -419,35 +419,36 @@ p {
 #textBox{
 	position:absolute;
   background:rgba(0,0,0,.45);
-	top:25%;
+	top:20%;
 	padding:2%;
-  border-radius:5px;
+  border-radius:10px;
   display:inline-block;
 	z-index: 2;
-	-moz-transition: all 1s;
-    -webkit-transition: all 1s;
-	transition: all 1s;
   display:inline-block;
   color:black;
   margin-left:20%;
   margin-right:20%;
+  -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+	transition: all 1s;
 }
 
 #textBox-about{
 	position:absolute;
+  max-width:30%;
   background:rgba(0,0,0,.45);
-	top:25%;
+	top:15%;
 	padding:2%;
-  border-radius:5px;
+  border-radius:10px;
   display:inline-block;
 	z-index: 2;
-	-moz-transition: all 1s;
-    -webkit-transition: all 1s;
-	transition: all 1s;
   display:inline-block;
   color:white;
   margin-left:20%;
   margin-right:20%;
+  -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+	transition: all 1s;
 }
 
 #textBox-about:hover {
@@ -457,18 +458,18 @@ p {
 #textBoxLeft{
 	position:absolute;
   background:rgba(0,0,0,.45);
-	width:30%;
+	max-width:30%;
   top:15%;
   left:5%;
 	padding:2%;
   border-radius:5px;
   display:inline-block;
 	z-index: 2;
-	-moz-transition: all 1s;
-    -webkit-transition: all 1s;
-	transition: all 1s;
   display:inline-block;
   color:white;
+  -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+	transition: all 1s;
 }
 
 #textBoxLeft:hover {
@@ -675,5 +676,13 @@ textarea {
 
     color:white;
   }
+
+}
+/*Smaller screens (e.g. iPhone 5)*/
+@media only screen and (max-width : 450px), only screen and (max-device-width: 450px) {
+
+	.textBoxTitle-about {
+		font-size:34px;
+	}
 
 }
