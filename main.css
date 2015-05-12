@@ -439,7 +439,7 @@ p {
   background:rgba(0,0,0,.45);
 	top:15%;
 	padding:2%;
-  border-radius:10px;
+  border-radius:5px;
   display:inline-block;
 	z-index: 2;
   display:inline-block;
@@ -673,7 +673,7 @@ textarea {
 	}
   
   .textBoxTitle-about{
-
+  	text-align: center;
     color:white;
   }
 
@@ -682,7 +682,8 @@ textarea {
 @media only screen and (max-width : 450px), only screen and (max-device-width: 450px) {
 
 	.textBoxTitle-about {
-		font-size:34px;
+		font-size:24px;
+    text-align: center;
+    vertical-align: middle;
 	}
-
 }
