@@ -229,7 +229,7 @@ body {
   -webkit-tap-highlight-color: #2486d0; }
 
 body {
-  background: #f6f6f8;
+  background: white;
   font-size: 14px;
   line-height: 1.6;
   font-family: "Open Sans" sans-serif;
@@ -262,7 +262,7 @@ nav ul li{
 }
 
 nav ul li:hover{
-	background-color: #505050;
+	background-color: black;
 	opacity: .55;
 	z-index : 100;
 }
@@ -401,6 +401,7 @@ p {
   position:relative;
 	z-index: 0;
   display:block;
+  justify-content:center;
   
 }
 
@@ -419,12 +420,10 @@ p {
 	
 }
 
-.textBox{
-	max-width:30%;
+#textBox{
 	position:absolute;
-  background:rgba(0,0,0,.45);
-	top:20%;
-	left:10%;
+  background:rgba(0,0,0,.65);
+	top:25%;
 	padding:2%;
   border-radius:5px;
   display:inline-block;
@@ -432,8 +431,10 @@ p {
 	-moz-transition: all 1s;
     -webkit-transition: all 1s;
 	transition: all 1s;
-  block:inline-block;
+  display:inline-block;
   color:white;
+  margin-left:20%;
+  margin-right:20%;
 }
 
 .textBoxTitle{
@@ -441,6 +442,7 @@ p {
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
 	z-index: 2;
+  text-align:center;
 }
 
 .contactTitle{
@@ -461,7 +463,7 @@ p {
 }
 #content-half{	
   padding-bottom:60px; /* Height of the footer element */
-  width:50%;
+  width:75%;
   margin-right:auto;
   margin-left:auto;
   justify-content:center;
