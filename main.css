@@ -277,11 +277,10 @@ section{
 
 #pageTitle{
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	color: white;
-	background: #000000;
-	padding: 6% 0px .02px 0;
-	opacity:.75;
+	background: #424242;
+	padding: 3% 0px .02px 0;
 	z-index: -5;
 	font-size: 50px;
 	position: relative;
@@ -328,7 +327,7 @@ section{
 header {
   height: 100vh;
   background-color: white;
-  background-image: url("background.jpg");
+  background-image: url("/images/landingpage.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom: 0px;
@@ -370,7 +369,7 @@ header {
 	z-index: 10;
 }
 p {
-  width: 65%;
+  width: 50%;
   margin: 0 auto 20px;
 }
 
@@ -390,21 +389,20 @@ p {
 
 
 .socialMedia{
-	width: 10%;
+  margin-left:5%;
 	position: relative;
 	align-items: center;
 	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
-	background-size: cover;
-	background-position: center;
-	margin-bottom: 0px;
+  text-align: center;
 }	
 
 
 .wideImage{
 	width: 100%;
-	z-index: 5;
+  position:relative;
+	z-index: 0;
+  display:block;
+  
 }
 
 .module{
@@ -413,28 +411,34 @@ p {
 }
 
 .map{
-	width: 65%;
+	width: 50%;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 1;
+  margin-bottom:100px;
 	
 }
 
 .textBox{
-	width: 20%;
-	position: absolute;
-	border-radius: 10px;
-	top: 20%;
-	margin-bottom: 20%;
-	left: 10%;
-	padding: 2%;
-	z-index: 1;
+	max-width:30%;
+	position:absolute;
+  background:rgba(0,0,0,.45);
+	top:20%;
+	left:10%;
+	padding:2%;
+  border-radius:5px;
+  display:inline-block;
+	z-index: 2;
+	-moz-transition: all 1s;
+    -webkit-transition: all 1s;
+	transition: all 1s;
+  block:inline-block;
+  color:white;
 }
 
 .textBoxTitle{
-	color: #000000;
-	font-size: 34px;
+	font-size: 45px;
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
 	z-index: 2;
@@ -451,10 +455,9 @@ p {
 }
 
 .textBoxText{
-	color: #000000;
 	font-size: 16px;
 	font-family: "Open Sans" sans-serif;
-	font-weight: 200;
+	font-weight: 10;
 	z-index: 2;
 }
 
@@ -462,14 +465,15 @@ p {
 	padding-bottom:60px; /* Height of the footer element */
 }
 #footer {
-	height:45px;
+	height:40px;
 	background: #424242;
 	z-index:1;
 	position:relative;
 	margin-top:-80px;
 	padding-top:20px;
 	padding-bottom:20px;
-	padding-left:50%;
+  text-align:center;
+  color: white;
 }
 
 
@@ -477,7 +481,7 @@ p {
 
 form {
   max-width: 450px;
-  margin: 0 auto 100px;
+  margin: 0 auto 20px;
   padding: 0 20px;
 }
 
@@ -560,4 +564,52 @@ textarea {
   }
 }
 /* ----------FORM CSS-------------- */
+/*-------UNDER TEXT --------------*/
+.underText {
+	display:none;
+	background: rgba(0,0,0,0.80);
+	padding-top:4%;
+	padding-bottom:4%;
+	padding-left:6%;
+	padding-right:6%;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
 
+.underText:hover {
+	background: rgba(0,0,0,1);
+}
+
+.underText:hover .highlight {
+	color:#7BDE7B;
+}
+
+.underText:hover .arrow-up {
+	border-bottom: 65px solid rgba(0,0,0,1);
+}
+/*Medium screens*/
+@media only screen and (max-width : 1080px), only screen and (max-device-width: 768px) {
+
+	.underText {
+		display:inline-block;
+		color: rgba(255,255,255,0.88);;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight: 200;
+		font-size:18px;
+	}
+
+	.textBox {
+		top:17%;
+	}
+
+	.textBoxText {
+		display:none;
+	}
+  
+  .textBoxTitle{
+
+    color:white;
+  }
+
+}
