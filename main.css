@@ -692,7 +692,7 @@ textarea {
 	border-bottom: 65px solid rgba(0,0,0,1);
 }
 /*Medium screens*/
-@media only screen and (max-width : 1080px), only screen and (max-device-width: 768px) {
+@media only screen and (max-width : 1080px), only screen and (max-device-width: 700px) {
 
 	.underText {
 		display:inline-block;
