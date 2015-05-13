@@ -24,7 +24,7 @@ a {
   background: 0 0; }
 
 a:active, a:hover {
-  outline: 0; }
+  outline: 1px; }
 
 abbr[title] {
   border-bottom: 1px dotted; }
@@ -207,7 +207,7 @@ hr {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
   outline: 0; }
 
 a:hover, a:focus {
@@ -367,7 +367,7 @@ header {
 	z-index: 10;
 }
 p {
-  margin: 0 auto 20px;
+  margin: 0 auto 5px;
 }
 
 #banner{
@@ -379,7 +379,7 @@ p {
   padding:10px;
 	z-index: 2;
   color:black;
-  font-size: 42px;
+  font-size: 38px;
 }
 
 #mainDark{
@@ -513,7 +513,7 @@ p {
 }
 
 .textBoxTitle{
-	font-size: 32px;
+	font-size: 22px;
 	font-family: "Open Sans" sans-serif;
   font-weight: 100;
 	z-index: 2;
