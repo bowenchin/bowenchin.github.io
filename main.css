@@ -368,11 +368,25 @@ p {
   margin: 0 auto 20px;
 }
 
+#banner{
+  width:50%;
+  line-height:75%;
+  position:relative;
+  margin-top:15px;
+  margin-bottom:15px;
+  padding:10px;
+	z-index: 2;
+  color:black;
+  font-size: 42px;
+}
+
 #mainDark{
 	width: 100%;
+  position:relative;
 	margin: 0 auto 10px;
-  margin-top:10px;
-  margin-bottom:10px;
+  margin-top:20px;
+  margin-bottom:20px;
+  padding:10px;
 	z-index: 2;
   color:black;
   background: #eeeeee; /* Old browsers */
@@ -383,9 +397,9 @@ p {
   background: -ms-linear-gradient(-45deg,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
   background: linear-gradient(135deg,  #eeeeee 0%,#cccccc 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  -moz-box-shadow:    5px 7px 7px 5px gray;
-  -webkit-box-shadow: 5px 7px 7px 5px gray;
-  box-shadow:         5px 7px 7px 5px gray;
+  -moz-box-shadow:    0px 3px 10px 5px gray;
+  -webkit-box-shadow: 0px 3px 10px 5px gray;
+  box-shadow:         0px 3px 10px 5px gray;
 }
 
 #mainLight{
@@ -431,9 +445,7 @@ p {
 
 #textBox{
 	position:absolute;
-  background:rgba(0,0,0,.45);
-	top:20%;
-	padding:2%;
+	padding:10%;
   border-radius:10px;
   display:inline-block;
 	z-index: 2;
@@ -442,13 +454,13 @@ p {
   margin-left:20%;
   margin-right:20%;
   -moz-transition: all 1s;
-    -webkit-transition: all 1s;
+  -webkit-transition: all 1s;
 	transition: all 1s;
 }
 
 #textBox-about{
 	position:absolute;
-  max-width:30%;
+  max-width:100%;
   background:rgba(0,0,0,.45);
 	top:15%;
 	padding:2%;
@@ -518,7 +530,7 @@ p {
 }
 
 .textBoxText{
-	font-size: 16px;
+	font-size: 15px;
 	font-family: "Open Sans" sans-serif;
 	font-weight: 10;
 	z-index: 2;
@@ -544,7 +556,7 @@ p {
 	padding-bottom:60px; /* Height of the footer element */
 }
 #footer {
-	height:40px;
+	height:60px;
 	background: #424242;
 	z-index:1;
 	position:relative;
