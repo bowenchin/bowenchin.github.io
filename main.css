@@ -464,7 +464,7 @@ p {
 	position:absolute;
   max-width:100%;
   background:rgba(0,0,0,.45);
-	top:15%;
+	top:30%;
 	padding:2%;
   border-radius:5px;
   display:inline-block;
@@ -703,7 +703,7 @@ textarea {
 	}
 
 	.textBox-about {
-		top:10%;
+		top:7%;
     background:none;
 	}
 
