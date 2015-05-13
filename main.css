@@ -206,12 +206,15 @@ hr {
   height: 0; }
 
 a {
-  color: inherit;
-  text-decoration: underline;
-  outline: 0; }
+  color: #137ddf;
+  outline: 0; 
+  text-decoration:none;
+  }
 
 a:hover, a:focus {
-  color: #1f81f0; }
+  color: #1e46b4; 
+  text-decoration: underline;
+  }
 
 ::selection {
   background: #2486d0; }
@@ -462,16 +465,16 @@ p {
 
 #textBox-about{
 	position:absolute;
-  max-width:550px;
+  max-width:100%;
   background:rgba(0,0,0,.45);
-	top:25%;
+	top:20%;
 	padding:2%;
   border-radius:5px;
   display:inline-block;
 	z-index: 2;
   display:inline-block;
   color:white;
-  margin-left:25%;
+  margin-left:20%;
   margin-right:20%;
   -moz-transition: all 1s;
     -webkit-transition: all 1s;
@@ -482,12 +485,23 @@ p {
 	background: rgba(0,0,0,.75);
 }
 
+.highlight {
+	-moz-transition: all 1s;
+    -webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+#textBox-about:hover .highlight {
+	color:#7BDE7B;
+}
+
+
 #textBoxLeft{
 	position:absolute;
   background:rgba(0,0,0,.45);
-	max-width:35%;
+	max-width:480px;
   top:27%;
-  left:5%;
+  left:3%;
 	padding:2%;
   border-radius:5px;
   display:inline-block;
@@ -495,14 +509,16 @@ p {
   display:inline-block;
   color:white;
   -moz-transition: all 1s;
-    -webkit-transition: all 1s;
+  -webkit-transition: all 1s;
 	transition: all 1s;
 }
 
 #textBoxLeft:hover {
 	background: rgba(0,0,0,75);
 }
-
+#textBoxLeft:hover .highlight {
+	color:#7BDE7B;
+}
 
 .textBoxTitle{
 	font-size: 22px;
@@ -678,6 +694,7 @@ textarea {
 	-moz-transition: all 1s;
 	-webkit-transition: all 1s;
 	transition: all 1s;
+  z-index:5;
 }
 
 .underText:hover {
