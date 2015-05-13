@@ -462,16 +462,16 @@ p {
 
 #textBox-about{
 	position:absolute;
-  max-width:100%;
+  max-width:550px;
   background:rgba(0,0,0,.45);
-	top:30%;
+	top:25%;
 	padding:2%;
   border-radius:5px;
   display:inline-block;
 	z-index: 2;
   display:inline-block;
   color:white;
-  margin-left:20%;
+  margin-left:25%;
   margin-right:20%;
   -moz-transition: all 1s;
     -webkit-transition: all 1s;
@@ -485,8 +485,8 @@ p {
 #textBoxLeft{
 	position:absolute;
   background:rgba(0,0,0,.45);
-	max-width:30%;
-  top:15%;
+	max-width:35%;
+  top:27%;
   left:5%;
 	padding:2%;
   border-radius:5px;
@@ -549,7 +549,7 @@ p {
 }
 
 .textBoxText-about{
-	font-size: 16px;
+	font-size: 18px;
 	font-family: "Open Sans" sans-serif;
 	font-weight: 10;
 	z-index: 2;
@@ -714,6 +714,7 @@ textarea {
   .textBoxTitle-about{
   	text-align: left;
     color:white;
+    top:5%;
   }
 
 }
