@@ -503,6 +503,16 @@ p {
 	background: rgba(0,0,0,75);
 }
 
+
+.textBoxTitle{
+	font-size: 22px;
+	font-family: "Open Sans" sans-serif;
+  font-weight: 100;
+	z-index: 2;
+  text-align:center;
+  text-align:left;
+}
+
 .textBoxTitle-about{
 	font-size: 45px;
 	font-family: "Open Sans" sans-serif;
@@ -512,8 +522,8 @@ p {
   color:white;
 }
 
-.textBoxTitle{
-	font-size: 22px;
+.bigtextBoxTitle{
+	font-size: 38px;
 	font-family: "Open Sans" sans-serif;
   font-weight: 100;
 	z-index: 2;
