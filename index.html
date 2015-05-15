@@ -26,20 +26,241 @@
 <body>
   <nav>
   	<ul>
-  		<a href="#"><li>Home</li></a>
-  		<a href="about.html"><li>About</li></a>
-  		<a href="projects.html"><li>Projects</li></a>
-  		<a href="interests.html"><li>Interests</li></a>
-  		<!--<a href="Bowen_firstyear_resume.pdf"><li>Résumé</li></a>-->
-  		<a href="contact.html"><li>Contact</li></a>
+  		<a href="#header" class="smoothScroll"><li>Home</li></a>
+  		<a href="#about" class="smoothScroll"><li>About</li></a>
+  		<a href="#interest" class="smoothScroll"><li>Interests</li></a>
+  		<a href="#project" class="smoothScroll"><li>Projects</li></a>
+  		<a href="#contact" class="smoothScroll"><li>Contact</li></a>
   	</ul>
   	<div class="handle">Menu</div>
   </nav>
+  <a name="header"></a>
   <header>
     <p class="home"><font color="white">Hello, I'm Bowen</p>
-    <p class="home_small">Welcome to my personal site</p>
+    <p class="home_small">Scroll down to learn more about me.</p>
   </header>
-      	   
+      
+  	<div id="content">
+ <!--ABOUT SECTION--> 	
+<a name="about"></a>
+<div id="intro-about" class="module">
+      <img src="/images/selfportrait.jpg" class="wideImage">
+      <div id = "textBox-about">
+  		<p class = "textBoxTitle-about">About me</p>
+</div>  
+      <div class="underText">
+          <p>  Hi there! I am <span class="highlight">Bowen Chin</span> and welcome to my personal website. I am currently a student studying <span class="highlight">Engineering</span> at the <span class="highlight">Chinese University of Hong Kong</span>. 
+        While engineering has forced me to investigate problems from every angle, I also strive to be passionate and curious in everything I do. </p>
+        <br></br>
+        <p>Feel free to browse around and learn more about me.</p>
+      </div>
+      
+</div>     
+
+<!-- Resume -->
+<a name="resume"></a>        
+  	   	 <div id="mainLight">
+  	   	 <div id = "module">
+  	   	  		<p class = "contactTitle">Want a copy of my résumé?</p>
+  	   	  		<p class = "contactTitle">Then click on the button below!</p>
+  	   	  		<form action="#">
+                 <!--INSERT LINK TO RESUME (AFTER REMOVING PHONE NUMBER-->
+  	   	  		    <input type="submit" value="Download resume">
+  	   	  		</form>	
+  	 	 </div>
+  	 	 </div>
+    
+<!-- Interests -->
+<a name="interest"></a>
+<div id="interest-about" class="module">
+        <img src="/images/tundra.jpg" class="wideImage">
+        <div id = "textBox-about">
+  	   		<p class = "textBoxTitle-about">Interests</p>
+        </div>
+            <div class="underText">
+            <p>
+             From photography to programming, from reading to travelling, my interests are few and far in between.
+           </p>
+           <br></br>
+           <p>
+             <span class="highlight">Photography</span> allows me to freeze time, and capture the beauty of the world.
+           </p>
+           <p>
+             <span class="highlight">Programming</span> opens a world of possibilities, hacking away and creating new things.
+           </p>
+            <p>
+            <span class="highlight">Reading</span> rejuvenates the mind and opens another dimension that is out of this world.
+           </p>
+           <p>
+             <span class="highlight">Travelling</span> and exploring the world, taking in insights and meeting new people.
+           </p>
+       </div>
+</div>
+  	<div id="mainLight">
+  		<div class="mainLight">
+  			<div class "module">
+  				<p class="bigtextBoxTitle">Photography</p>
+          <p class = "textBoxText-about"><font color="black">To see more of my work, please visit my <a href="www.flickr.com/bowow/">Flickr</a> page.</font></p>
+        </div>
+      </div>
+    </div>
+  				<section id="photos">
+            <a href="https://flickr.com/bowow/" target="_blank">
+            <img src="/images/tundra.jpg" alt="tundra">
+  			    </a> 
+  	        <a href="https://flickr.com/bowow/" target="_blank">
+            <img src="/images/img-1.jpg" alt="tundra">
+            </a>
+            <a href="https://flickr.com/bowow/" target="_blank">
+            <img src="/images/img-2.jpg" alt="tundra">
+  			    </a> 
+            <a href="https://flickr.com/bowow/" target="_blank">
+            <img src="/images/img-3.jpg" alt="tundra">
+  			    </a> 
+            <a href="https://flickr.com/bowow/" target="_blank">
+            <img src="/images/landingpage.jpg" alt="tundra">
+  			    </a> 
+            <a href="https://flickr.com/bowow/" target="_blank">
+            <img src="/images/img-4.jpg" alt="tundra">
+  			    </a>  
+            <a href="https://flickr.com/bowow/" target="_blank">
+            <img src="/images/img-5.jpg" alt="tundra">
+  			    </a> 
+            <a href="https://flickr.com/bowow/" target="_blank">
+            <img src="/images/img-6.jpg" alt="tundra">
+  			    </a> 
+            <a href="https://flickr.com/bowow/" target="_blank">
+            <img src="/images/sunsetsky.jpg" alt="tundra">
+  			    </a> 
+          </section>
+  		</div>
+      <div id="mainLight">
+  		<div class="mainLight">
+  		<div class "module">
+  		   	<p class = "bigtextBoxTitle">Travel</p>
+  		   	<p class = "textBoxText-about"><font color="#49b02a">I love to travel.</font></p>
+  		   	<p class = "textBoxText-about"><font color="black">Traveling allows me to intereact with people of diverse cultures and appreciate the wonders of the world.</font></p> 	
+          <p class = "textBoxText-about"><font color="black">Browse through the map below and explore the world with me!</font></p>
+  		   	<div class = "map"></p><iframe src="https://www.google.com/maps/d/u/0/embed?mid=zpxCg-05uEdw.kGJN-vevdBPM" width="98%" height="480"></iframe></div>		   	
+  		   	</div>
+      </div>
+      </div>
+      </div>
+
+ 
+ <!-- PROJECTS SECTION -->
+ <a name="project"></a>
+    <div id="projects" class="module">
+      <img src="/images/img-1.jpg" class="wideImage">
+      <div id = "textBox-about">
+  		<p class = "textBoxTitle-about">Projects</p>
+    </div>  
+        <div id="content-half">
+      <div id="banner">In progress</div>
+      <div id="mainDark">
+    	 <div class "module">
+    		  <p class = "textBoxTitle">Sign langugage recognition wearable glove</p>
+    		  <p class = "project_textBoxText">This project aims to improve upon prior sign language recognition glove by using inertial measurement units (IMU) to detect gesture in space.
+            Along with the improved wearable, an education application will use the data from the glove and 2D camera to teach and instruct user of correct sign.
+          </p>
+    	   </div>
+      </div>
+      <div id="mainDark">
+    <div class "module">
+    	   	<p class = "textBoxTitle"><a href="bowenchin.com"><font color ="#2780d2">bowenchin.com</font></a></p>
+    	     <img src="/icons/logo.png" alt="Logo" width="90px" height="90px" style="float:left;margin: -4px 10px 10px 0%">
+           <p class = "textBoxText">This site serves as my personal and professional presence on the web. 
+             It is built from the ground up, using primarily HTML and CSS with heavy emphasis on UI and responsive web design elements.
+             As I learn more about web development and design, I plan to add more information and unique features such as animations,transitions, and parallax over time. 
+           </p>
+           <br></br>
+    </div>
+      </div>
+    <div id="banner">Completed</div>
+      <div id="mainDark">
+    	 <div class "module">
+    		  <p class = "textBoxTitle">Project S.U.N. (Sensory Ultrasonic Navigation)</p>
+    		  <p class = "textBoxText"> <img src="/icons/projectsun-logo.png" alt="project logo" width="170px" height="170px" style="float:left;margin: -4px 10px 10px 0%">
+            An engineering project which utilizes ultrasonic sensors to aid the visually impaired in navigation. Two sets of werables, a glove and shoulder component, were created to house the ultrasonic sensors and vibrational and pieze motors that gave tactile and auditory feedback to the user. This project won "Best in Fair" in a regional science fair and went on to participate in the Intel International Science and Engineering Fair (ISEF).</p>
+        <p class = "textBoxText">Teammates: <a href="i-am-zac.com">Zachary Guo</a> & Jeremy Tan</p>
+        <p class = "textBoxText">
+    				Research report: <a href="https://static1.squarespace.com/static/51c26f84e4b0c2b46f4d68ac/t/525b5342e4b0804fa258dde4/1381716802119/ResearchPaperReduced.pdf">View PDF</a></p>
+        <p class = "textBoxText">
+    				Overview video: <a href="https://www.youtube.com/watch?t=76&v=PEzIeS_jx0E">View Youtube video</a></p>      
+    	   </div>
+      </div> 
+    <div id="mainDark">
+    	   	<div class "module">
+    	   		<p class = "textBoxTitle">Webmaster of <a href="images/tianmunv1.png"><font color ="#2780d2">tianmun.org</font></a></p>
+    	   		<p class = "textBoxText">
+               <img src="/icons/logo-tianmun.png" alt="Tianmun logo" width="100px" height="100px" style="float:left;margin: -4px 10px 10px 0%">
+               Designed and maintained the website of my high school's Model United Nations conference. This site is based on the wordpress.org platform.
+    	   		</p>
+            <br></br>
+           </div>
+          </div>
+        </div>
+    </div>
+    
+<!--CONTACT SECTION-->
+<a name="contact"></a>
+<div id="contact" class="module">
+      <img src="/images/img-2.jpg" class="wideImage">
+      <div id = "textBox-about">
+  		<p class = "textBoxTitle-about">Contact</p>
+</div>  
+       	<div id = "mainLight">  		
+  	  		<div class "module">
+  	  		 	<p class="contactTitle">Network with me!</p>
+  			<div class="socialMedia">     
+  			            <a href="https://twitter.com/bowenchin" target="_blank">
+  			            <img src="/icons/twitter.png" alt="Twitter Logo" width="80" height="80" style="margin: 10px 10px 10px 5%; border-radius: 10px 10px 10px 10px;">
+  			            </a>    
+  			            <a href="https://www.linkedin.com/in/bowenchin" target="_blank">
+  			           	<img src="/icons/linkedin.png" alt="LinkedIn Logo" width="80" height="80" style=" margin: 10px 10px 10px 5%; border-radius: 10px 10px 10px 10px;">
+  			            	            </a>         
+  			            <a href="https://plus.google.com/+BoWenChin" target="_blank">
+  			            <img src="/icons/google.png" alt="Goole+ Logo" width="80" height="80" style=" margin: 10px 10% 10px 5%; border-radius: 10px 10px 10px 10px;">
+  			            </a>  				
+  			</div>
+  			</div>
+  
+  			<div class="module">
+  					<section>
+  					<p class = "contactTitle">Send me a quick message:</p>
+  					<form action="//formspree.io/chin_bo_wen@yahoo.com"
+  					      method="POST">
+  					    <label><span class="form">Your Name</span>
+  					    <input type="text" name="name">
+  					    <label><span class="form">Your Email</span></label>
+  					    <input type="email" name="_replyto">
+  					    <label><span class="form">Your Message</span></label>
+  					    <textarea name="message"></textarea>
+  					    <input type="submit" value="Send">
+  					</form>
+  					</section>
+  				</div>
+  	</div>
+  	</div>
+  	</div>
+    
+    
+  </div>
+ 
+	<div id="footer">
+             <p>© 2015 CHIN Bo Wen</p>
+             <a href="https://twitter.com/bowenchin" target="_blank">
+  			            <img src="/icons/twitter.png" alt="Twitter Logo" width="25" height="25" style="margin: 1px 1px 1px 1%">
+  			            </a>    
+  			            <a href="https://www.linkedin.com/in/bowenchin" target="_blank">
+  			           	<img src="/icons/linkedin.png" alt="LinkedIn Logo" width="25" height="25" style=" margin: 1px 1px 1px 1%">
+  			            	            </a>         
+  			            <a href="https://plus.google.com/+BoWenChin" target="_blank">
+  			            <img src="/icons/google.png" alt="Goole+ Logo" width="25" height="25" style=" margin: 1px 1px 1px 1%">
+             </a>  
+           </div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="smoothscroll.js"></script>   	   
 </body>
 <script>
 	$('.handle').on('click',function(){

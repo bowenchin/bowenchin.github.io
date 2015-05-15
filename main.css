@@ -253,8 +253,9 @@ nav ul{
 	-o-: max-height 0.4s;
 	transition: max-height 0.4s;
 	z-index : 100;
-	position: relative;
-	width:100%;  
+	position: fixed;
+	width:100%; 
+  opacity:.75; 
 }
 nav ul li{
 	display: inline-block;
@@ -295,7 +296,8 @@ section{
 	cursor: pointer;
 	color: white;
 	display:none;
-	position:relative;
+	position:fixed;
+  opacity:.75;
 	z-index:100;
   border-box:black;
   border-style: solid;
@@ -409,8 +411,10 @@ p {
 #mainLight{
 	background-color: white;
   color:black;
-	width: 100%;
+	width: 75%;
 	margin: 0 auto 20px;
+  margin-bottom:50px;
+  margin-top:50px;
 	z-index: 0;
 }
 
@@ -467,8 +471,7 @@ p {
 
 #textBox-about{
 	position:absolute;
-  width:60%;
-  background:rgba(0,0,0,.45);
+  width:40%;
 	top:25%;
   left:20%;
   right:20%;
@@ -476,10 +479,14 @@ p {
   border-radius:5px;
 	z-index: 2;
   color:white;
+  border-style: solid;
+  border-width:2px;
+  border-color: white;
   margin:0 auto;
   -moz-transition: all 1s;
   -webkit-transition: all 1s;
 	transition: all 1s;
+  
 }
 
 #textBox-about:hover {
@@ -497,22 +504,6 @@ p {
 }
 
 
-#textBoxLeft{
-	position:absolute;
-  background:rgba(0,0,0,.45);
-	max-width:480px;
-  top:27%;
-  left:3%;
-	padding:2%;
-  border-radius:5px;
-  display:inline-block;
-	z-index: 2;
-  display:inline-block;
-  color:white;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-	transition: all 1s;
-}
 
 #textBoxLeft:hover {
 	background: rgba(0,0,0,75);
@@ -545,7 +536,6 @@ p {
   font-weight: 100;
 	z-index: 2;
   text-align:center;
-  text-align:left;
 }
 
 .contactTitle{
@@ -572,6 +562,12 @@ p {
 	font-weight: 10;
 	z-index: 2;
   color:white;
+  text-align:center;
+}
+
+
+#content {
+	padding-bottom:60px; /* Height of the footer element */
 }
 
 #content-half{	
@@ -582,15 +578,12 @@ p {
   justify-content:center;
 }
 
-#content {
-	padding-bottom:60px; /* Height of the footer element */
-}
 #footer {
-	height:60px;
+	height:40px;
 	background: #424242;
 	z-index:1;
 	position:relative;
-	margin-top:-60px;
+	margin-top:0px;
 	padding-top:20px;
 	padding-bottom:20px;
   text-align:center;
@@ -640,6 +633,7 @@ textarea {
   text-transform: uppercase;
   width: 100%;
   float: center;
+  z-index:20;
   transition: all 0.75s ease;
 }
  [type="submit"]:hover {
@@ -690,18 +684,27 @@ textarea {
   }
 }
 /* ----------FORM CSS-------------- */
+
 /*-------UNDER TEXT --------------*/
 .underText {
-	display:none;
 	background: rgba(0,0,0,0.80);
+  width:70%;
+  padding:15%;
 	padding-top:4%;
 	padding-bottom:4%;
-	padding-left:6%;
-	padding-right:6%; 
 	-moz-transition: all 1s;
 	-webkit-transition: all 1s;
 	transition: all 1s;
   z-index:5;
+  display:inline-block;
+	color: rgba(255,255,255,0.88);;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 200;
+  font-size:18px;
+  text-align:left;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .underText:hover {
@@ -718,30 +721,20 @@ textarea {
 /*Medium screens: @media only screen and (max-width : 1080px), only screen and (max-device-width: 768px)*/
 @media only screen and (max-width : 800px), only screen and (max-device-width: 800px) {
 
-	.underText {
-		display:inline-block;
-		color: rgba(255,255,255,0.88);;
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-		font-weight: 200;
-		font-size:18px;
-	}
-
 	.textBox-about {
-		top:7%;
+		top:1%;
+
+	}
+.textBoxTitle-about {
+		font-size:42px;
+    text-align: center;
+    vertical-align: middle;
+		top:5%;
     background:none;
-	}
 
-	.textBoxText-about {
-		display:none;
-	}
-  
-  .textBoxTitle-about{
-  	text-align: left;
-    color:white;
-    top:5%;
   }
-
 }
+
 /*Smaller screens (e.g. iPhone 5)*/
 @media only screen and (max-width : 450px), only screen and (max-device-width: 450px) {
 
@@ -753,6 +746,8 @@ textarea {
     background:none;
 	}
 }
+
+
 
 /*responsive photo grid*/
 #photos {
