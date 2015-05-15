@@ -443,7 +443,8 @@ p {
 }
 
 .map{
-	width: 75%;
+	width:720px;
+  height:480px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -471,7 +472,7 @@ p {
 
 #textBox-about{
 	position:absolute;
-  width:40%;
+  width:50%;
 	top:15%;
   left:20%;
   right:20%;
