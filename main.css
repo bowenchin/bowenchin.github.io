@@ -394,9 +394,16 @@ p {
 	z-index: 2;
   color:black;
   background: #eceff1; 
-  -moz-box-shadow:    0px 10px 10px 5px #546e7a;
-  -webkit-box-shadow: 0px 10px 10px 5px #546e7a;
-  box-shadow:         0px 10px 10px 5px #546e7a;
+  -moz-box-shadow:    0px 5px 3px 0px #78909c;
+  -webkit-box-shadow: 0px 5px 3px 0px #78909c;
+  box-shadow:         0px 5px 3px 0px #78909c;
+  transition: all 0.75s ease;
+}
+
+#mainDark:hover{
+  -moz-box-shadow:    0px 0px 7px 7px #90a4ae;
+  -webkit-box-shadow: 0px 0px 7px 7px #90a4ae;
+  box-shadow:         0px 0px 7px 7px #90a4ae;
 }
 
 #mainLight{
@@ -460,19 +467,18 @@ p {
 
 #textBox-about{
 	position:absolute;
-  max-width:100%;
+  width:60%;
   background:rgba(0,0,0,.45);
-	top:20%;
+	top:25%;
+  left:20%;
+  right:20%;
 	padding:2%;
   border-radius:5px;
-  display:inline-block;
 	z-index: 2;
-  display:inline-block;
   color:white;
-  margin-left:20%;
-  margin-right:20%;
+  margin:0 auto;
   -moz-transition: all 1s;
-    -webkit-transition: all 1s;
+  -webkit-transition: all 1s;
 	transition: all 1s;
 }
 
@@ -634,6 +640,7 @@ textarea {
   text-transform: uppercase;
   width: 100%;
   float: center;
+  transition: all 0.75s ease;
 }
  [type="submit"]:hover {
   background: #2486d0;
@@ -709,7 +716,7 @@ textarea {
 	border-bottom: 65px solid rgba(0,0,0,1);
 }
 /*Medium screens: @media only screen and (max-width : 1080px), only screen and (max-device-width: 768px)*/
-@media only screen and (max-width : 720px), only screen and (max-device-width: 720px) {
+@media only screen and (max-width : 800px), only screen and (max-device-width: 800px) {
 
 	.underText {
 		display:inline-block;
