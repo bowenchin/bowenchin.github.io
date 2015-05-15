@@ -472,7 +472,7 @@ p {
 #textBox-about{
 	position:absolute;
   width:40%;
-	top:25%;
+	top:15%;
   left:20%;
   right:20%;
 	padding:2%;
@@ -853,3 +853,27 @@ textarea {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
     margin: 16px 0;
     transform: scaleX(1) translate3d(0, 0, 0); }
+    
+    /*Parallax Effect*/
+ .parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 480px; }
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10; }
+  .parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transform: translateX(-50%); }

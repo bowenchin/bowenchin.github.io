@@ -45,7 +45,9 @@
  <!--ABOUT SECTION--> 	
 <a name="about"></a>
 <div id="intro-about" class="module">
-      <img src="/images/selfportrait.jpg" class="wideImage">
+  <div class="parallax-container">
+      <div class="parallax"><img src="/images/headshot.png"></div>
+        </div>
       <div id = "textBox-about">
   		<p class = "textBoxTitle-about">About me</p>
 </div>  
@@ -74,7 +76,9 @@
 <!-- Interests -->
 <a name="interest"></a>
 <div id="interest-about" class="module">
-        <img src="/images/tundra.jpg" class="wideImage">
+  <div class="parallax-container">
+      <div class="parallax"><img src="/images/tundra.jpg"></div>
+        </div>
         <div id = "textBox-about">
   	   		<p class = "textBoxTitle-about">Interests</p>
         </div>
@@ -152,7 +156,9 @@
  <!-- PROJECTS SECTION -->
  <a name="project"></a>
     <div id="projects" class="module">
-      <img src="/images/img-1.jpg" class="wideImage">
+        <div class="parallax-container">
+      <div class="parallax"><img src="/images/img-1.jpg"></div>
+        </div>
       <div id = "textBox-about">
   		<p class = "textBoxTitle-about">Projects</p>
     </div>  
@@ -199,7 +205,9 @@
 <!--CONTACT SECTION-->
 <a name="contact"></a>
 <div id="contact" class="module">
-      <img src="/images/img-2.jpg" class="wideImage">
+    <div class="parallax-container">
+      <div class="parallax"><img src="/images/img-2.jpg"></div>
+        </div>
       <div id = "textBox-about">
   		<p class = "textBoxTitle-about">Contact</p>
 </div>  
@@ -261,7 +269,9 @@
 	$('.handle').on('click',function(){
 		$('nav ul').toggleClass('showing');
 	});
-  
+  $(document).ready(function(){
+      $('.parallax').parallax();
+    });
         
 </script>
 <script src="/assets/js/jquery-2.1.1.min.js"></script>
