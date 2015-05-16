@@ -596,7 +596,7 @@ p {
 }
 
 
-/* ------------ Form CSS ---------------*/
+/* ------------ FormSpree CSS ---------------*/
 
 form {
   max-width: 450px;
@@ -867,7 +867,7 @@ textarea {
     transform: scaleX(1) translate3d(0, 0, 0); }
     
     /*Parallax Effect*/
- .parallax-container {
+.parallax-container {
   position: relative;
   overflow: hidden;
   height: 480px; }
@@ -879,14 +879,13 @@ textarea {
   right: 0;
   bottom: 0;
   z-index: -10; }
-  .parallax img {
-    display: none;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    transform: translateX(-50%); }
-   
+.parallax img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transform: translateX(-50%); }
