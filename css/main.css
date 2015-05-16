@@ -639,6 +639,7 @@ textarea {
   text-transform: uppercase;
   width: 100%;
   float: center;
+  margin-top:10px;
   z-index:20;
   transition: all 0.75s ease-in-out;
 }
