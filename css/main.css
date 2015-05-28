@@ -418,20 +418,19 @@ p {
 
 
 .socialMedia{
-  margin-left:5%;
 	position: relative;
 	align-items: center;
 	justify-content: center;
-  text-align: center;
+    text-align: center;
 }	
 
 
 .wideImage{
-	width: 100%;
-  position:relative;
+    width: 100%;
+    position:relative;
 	z-index: 0;
-  display:block;
-  justify-content:center;
+    display:block;
+    justify-content:center;
   
 }
 
@@ -442,47 +441,47 @@ p {
 
 .map{
 	width:100%;
-  margin-left:10%;
-  position: relative;
+    margin-left:10%;
+    position: relative;
 	z-index: 1;
-  margin-bottom:20px;
-  margin-top:20px;
+    margin-bottom:20px;
+    margin-top:20px;
 	
 }
 /*normal textBox*/
 #textBox{
 	position:absolute;
 	padding:10%;
-  border-radius:10px;
-  display:inline-block;
+    border-radius:10px;
+    display:inline-block;
 	z-index: 2;
-  display:inline-block;
-  color:black;
-  margin-left:20%;
-  margin-right:20%;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  -o-: all 1s;
+    display:inline-block;
+    color:black;
+    margin-left:20%;
+    margin-right:20%;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-: all 1s;
 	transition: all 1s;
 }
 
 /*with justified center*/
 #textBox-about{
 	position:absolute;
-  width:50%;
+    width:50%;
 	top:15%;
-  left:20%;
-  right:20%;
+    left:20%;
+    right:20%;
 	padding:2%;
-  border-radius:5px;
+    border-radius:5px;
 	z-index: 2;
-  color:white;
-  border-style: solid;
-  border-width:2px;
-  border-color: white;
-  margin:0 auto;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
+    color:white;
+    border-style: solid;
+    border-width:2px;
+    border-color: white;
+    margin:0 auto;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
 	transition: all 1s;
   
 }
@@ -511,10 +510,10 @@ p {
 .textBoxTitle{
 	font-size: 22px;
 	font-family: "Open Sans" sans-serif;
-  font-weight: 100;
+    font-weight: 100;
 	z-index: 2;
-  text-align:center;
-  text-align:left;
+    text-align:center;
+    text-align:left;
 }
 /*bigger textBoxTitle font*/
 .textBoxTitle-about{
@@ -522,16 +521,16 @@ p {
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
 	z-index: 2;
-  text-align:center;
-  color:white;
+    text-align:center;
+    color:white;
 }
 
 .bigtextBoxTitle{
 	font-size: 38px;
 	font-family: "Open Sans" sans-serif;
-  font-weight: 100;
+    font-weight: 100;
 	z-index: 2;
-  text-align:center;
+    text-align:center;
 }
 
 .contactTitle{
