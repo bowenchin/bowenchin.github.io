@@ -411,8 +411,8 @@ p {
   color:black;
 	width: 75%;
 	margin: 0 auto 20px;
-  margin-bottom:50px;
-  margin-top:50px;
+  margin-bottom:75px;
+  margin-top:75px;
 	z-index: 0;
 }
 
@@ -444,8 +444,8 @@ p {
     margin-left:10%;
     position: relative;
 	z-index: 1;
-    margin-bottom:20px;
-    margin-top:20px;
+    margin-bottom:50px;
+    margin-top:50px;
 	
 }
 /*normal textBox*/
@@ -469,7 +469,7 @@ p {
 #textBox-about{
 	position:absolute;
     width:50%;
-	top:15%;
+	top:20%;
     left:20%;
     right:20%;
 	padding:2%;
@@ -857,7 +857,7 @@ textarea {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 480px; }
+  height: 70vh; }
 
 .parallax {
   position: absolute;
