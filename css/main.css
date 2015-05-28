@@ -418,11 +418,9 @@ p {
 
 
 .socialMedia{
-  margin-left:5%;
-	position: relative;
-	align-items: center;
-	justify-content: center;
-  text-align: center;
+    display:inline-block;
+    float:none;
+    text-align: center;
 }	
 
 
