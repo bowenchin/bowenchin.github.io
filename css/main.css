@@ -283,8 +283,8 @@ section{
 }
 
 .handle{
-	width: 8em;
-	background: #263238;
+	width: 6em;
+	/*background: #263238;*/
 	text-align: center;
   font-size:16px;
 	box-sizing: border-box;
@@ -295,22 +295,23 @@ section{
 	position:fixed;
   opacity:.75;
   z-index:100;
-  -webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 580px){
 	nav ul{
 		max-height: 0px;
-    top:57px;
+
     width:6em;
 	}
 	.showing{
 		max-height: 40em;
-    width:9.15em;
+    width:100%;
+    padding: 7px 10px;
 	}
 	nav ul li{
 		box-sizing: border-box;
@@ -621,8 +622,8 @@ textarea {
   
 }
  [type="submit"] {
-  background: #263238;
-  border-color:#263238;
+  background: #448AFF;
+  border-color:#448AFF;
   color: white;
   font-size: 18px;
   text-transform: uppercase;
@@ -631,15 +632,28 @@ textarea {
   margin-top:10px;
   z-index:20;
   transition: all 0.75s ease-in-out;
+  -moz-box-shadow:    0px 0px 20px 5px #E0E0E0;
+  -webkit-box-shadow: 0px 0px 20px 5px #E0E0E0;
+  box-shadow:         0px 0px 20px 5px #E0E0E0;
 }
  [type="submit"]:hover {
-  background: #2486d0;
-  border-color: #2486d0;
-  -moz-box-shadow:    0px 5px 10px 5px #546e7a;
-  -webkit-box-shadow: 0px 5px 10px 5px #546e7a;
-  box-shadow:         0px 5px 10px 5px #546e7a;
+  background: #2979FF;
+  border-color: #2979FF;
+  -moz-box-shadow:    0px 0px 20px 5px #9E9E9E;
+  -webkit-box-shadow: 0px 0px 20px 5px #9E9E9E;
+  box-shadow:         0px 0px 20px 5px #9E9E9E;
   
 }
+
+ [type="submit"]:active {
+  background: #1565C0;
+  border-color: #1565C0;
+  -moz-box-shadow:    0px 0px 10px 10px #E0E0E0;
+  -webkit-box-shadow: 0px 0px 10px 10px #E0E0E0;
+  box-shadow:         0px 0px 10px 10px #E0E0E0;
+  
+}
+
  .contact-info-group label {
   width: 50%;
   float: left;
@@ -857,7 +871,7 @@ textarea {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 70vh; }
+  height: 65vh; }
 
 .parallax {
   position: absolute;
