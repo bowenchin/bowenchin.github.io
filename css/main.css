@@ -441,10 +441,11 @@ p {
 }
 
 .map{
-	width:100%;
-    margin-left:10%;
+	  width:85%;
+    margin-left: 15%;
+    margin-right: 15%;
     position: relative;
-	z-index: 1;
+	 	z-index: 1;
     margin-bottom:50px;
     margin-top:50px;
 	
@@ -467,7 +468,7 @@ p {
 }
 
 /*with justified center*/
-#textBox-about{
+#textBox-wide{
 	position:absolute;
     width:50%;
 	top:20%;
@@ -487,7 +488,7 @@ p {
   
 }
 
-#textBox-about:hover {
+#textBox-wide:hover {
 	background: rgba(0,0,0,.75);
 }
 
@@ -497,7 +498,7 @@ p {
 	transition: all 1s;
 }
 
-#textBox-about:hover .highlight {
+#textBox-wide:hover .highlight {
 	color:#7BDE7B;
 }
 
@@ -517,7 +518,7 @@ p {
     text-align:left;
 }
 /*bigger textBoxTitle font*/
-.textBoxTitle-about{
+.textBoxTitle-wide{
 	font-size: 45px;
 	font-family: "Open Sans" sans-serif;
 	font-weight: 200;
@@ -698,8 +699,8 @@ textarea {
 /*-------UNDER TEXT --------------*/
 .underText {
 	background: #263238;
-    width:70%;
-    padding:15%;
+    width:65%;
+    padding:17.5%;
 	padding-top:4%;
 	padding-bottom:4%;
 	-moz-transition: all 1s;
@@ -711,7 +712,7 @@ textarea {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 200;
     font-size:18px;
-    text-align:left;
+    text-align:justify;
     position:relative;
     margin-left:auto;
     margin-right:auto;
@@ -731,11 +732,11 @@ textarea {
 /*Medium screens: @media only screen and (max-width : 1080px), only screen and (max-device-width: 768px)*/
 @media only screen and (max-width : 800px), only screen and (max-device-width: 800px) {
 
-	.textBox-about {
+	.textBox-wide {
 		top:1%;
 
 	}
-.textBoxTitle-about {
+.textBoxTitle-wide {
 	font-size:42px;
     text-align: center;
     vertical-align: middle;
@@ -748,7 +749,7 @@ top:5%;
 /*Smaller screens (e.g. iPhone 5)*/
 @media only screen and (max-width : 450px), only screen and (max-device-width: 450px) {
 
-	.textBoxTitle-about {
+	.textBoxTitle-wide {
         font-size:42px;
         text-align: center;
         vertical-align: middle;
