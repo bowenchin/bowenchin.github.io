@@ -441,13 +441,13 @@ p {
 }
 
 .map{
-	  width:85%;
-    margin-left: 15%;
-    margin-right: 15%;
+    width:80%;
+    margin-left: 20%;
+    margin-right: auto;
     position: relative;
-	 	z-index: 1;
-    margin-bottom:50px;
-    margin-top:50px;
+    z-index: 1;
+    margin-top:20px;
+    display: inline-block;
 	
 }
 /*normal textBox*/
