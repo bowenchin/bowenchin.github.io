@@ -9,6 +9,9 @@
 <meta name="google-site-verification" content="nBxZk0bgwtWshrSPLOvSsfKftNhYHY5qFIJKz-74TRI" />
   <link rel="shortcut icon" href="favicon.ico">  
   <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/mdl/material.css">
+    <script src="/mdl/material.min.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>
@@ -26,19 +29,36 @@
 
 
 <body>
-  <nav>
+  <nav id="hori-nav">
   	<ul>
   		<a href="#header" class="smoothScroll"><li>Home</li></a>
   		<a href="#about" class="smoothScroll"><li>About</li></a>
   		<a href="#interest" class="smoothScroll"><li>Interests</li></a>
   		<a href="#project" class="smoothScroll"><li>Projects</li></a>
   		<a href="#contact" class="smoothScroll"><li>Contact</li></a>
+        <a href="blog/blog.html"><li>Blog</li></a>
   	</ul>
-    <div class="handle">&#9776; Menu</div>
   </nav>
+     <div class="handle">&#9776;</div>
+ <nav id="sidebar-wrapper" class="toggle">
+     <a id="menu-close" href="#" class="toggle close-button"><i><img src="icons/exit-button.png"></i></a>
+  	<ul class="sidebar-nav">
+  		 <li class="sidebar-brand">
+            <a href="#top" onclick = $("#menu-close").click();>Navigation 菜單 </a>
+        </li>
+        <a href="#header" class="smoothScroll" onclick = $("#menu-close").click();><li>Home</li></a>
+  		<a href="#about" class="smoothScroll" onclick = $("#menu-close").click();><li>About</li></a>
+  		<a href="#interest" class="smoothScroll" onclick = $("#menu-close").click();><li>Interests</li></a>
+  		<a href="#project" class="smoothScroll" onclick = $("#menu-close").click();><li>Projects</li></a>
+  		<a href="#contact" class="smoothScroll" onclick = $("#menu-close").click();><li>Contact</li></a>
+  	</ul>
+   
+  </nav>
+
   <a name="header"></a>
   <header>
     <p class="home">Hello, I'm Bowen</p>
+      <br></br>
     <p class="home_small">Scroll down to learn more about me.</p>
     <div class="arrow_down"><a href="#about"><img src="/icons/expand-more.svg" alt="scroll down"></a></div>
   </header>
@@ -54,9 +74,8 @@
   		<p class = "textBoxTitle-wide">About me</p>
 </div>  
       <div class="underText">
-          <p>  Hi there! I am <span class="highlight">Bowen Chin</span> and welcome to my personal website. I am currently a student studying <span class="highlight">Engineering</span> at the <span class="highlight">Chinese University of Hong Kong</span>. 
-        While engineering has forced me to investigate problems from every angle, I also strive to be passionate and curious in everything I do. </p>
-        <br></br>
+          <h5>  Hi there! I am <span class="highlight">Bowen Chin</span> and welcome to my personal website. I am currently a student studying <span class="highlight">Engineering</span> at the <span class="highlight">Chinese University of Hong Kong</span>. 
+        While engineering has forced me to investigate problems from every angle, I also strive to be passionate and curious in everything I do. </h5>
         <p>Feel free to browse around and learn more about me.</p>
       </div>
       
@@ -68,8 +87,7 @@
   	   	 <div id = "module">
   	   	  		<p class = "contactTitle">Want a copy of my résumé?</p>
   	   	  		<p class = "contactTitle">Then click on the button below!</p>
-  	   	  		<form action="Bowen_firstyear_resume.pdf">
-                 <!--INSERT LINK TO RESUME (AFTER REMOVING PHONE NUMBER-->
+                <form action="Bowen_firstyear_resume.pdf">
   	   	  		    <input type="submit" value="Download resume">
   	   	  		</form>	
   	 	 </div>
@@ -85,22 +103,21 @@
   	   		<p class = "textBoxTitle-wide">Interests</p>
         </div>
             <div class="underText">
-            <p>
-             From photography to programming, from reading to travelling, my interests are few and far in between.
-           </p>
-           <br></br>
-           <p>
+            <h4>
+            My interests are few and far in between:
+           </h4>
+           <h5>
              <span class="highlight">Photography</span> allows me to freeze time, and capture the beauty of the world.
-           </p>
-           <p>
+           </h5>
+           <h5>
              <span class="highlight">Programming</span> opens a world of possibilities, hacking away and creating new things.
-           </p>
-            <p>
+           </h5>
+            <h5>
             <span class="highlight">Reading</span> rejuvenates the mind and opens another dimension that is out of this world.
-           </p>
-           <p>
+           </h5>
+           <h5>
              <span class="highlight">Travelling</span> and exploring the world, taking in insights and meeting new people.
-           </p>
+           </h5>
        </div>
 </div>
   	<div id="mainLight">
@@ -146,10 +163,10 @@
   		<div class = "module">
   				<p class="bigtextBoxTitle">Travel</p>
              <br></br>
-  		   	<p class = "textBoxText-about"><font color="#49b02a">I love to travel.</font></p>
+  		   	<p class = "textBoxText-about"><font color="green">I love to travel.</font></p>
   		   	<p class = "textBoxText-about"><font color="black">Traveling allows me to intereact with people of diverse cultures and appreciate the wonders of the world.</font></p> 	
           <p class = "textBoxText-about"><font color="black">Browse through the map below and explore the world with me!</font></p>
-  		   	<div class = "map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=zpxCg-05uEdw.kGJN-vevdBPM" width="75%" height="420px"></iframe></div>		   	
+  		   	<div class = "map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=zpxCg-05uEdw.kGJN-vevdBPM" width="75%" height="480px"></iframe></div>		   	
   		   	</div>
       </div>
       </div>
@@ -318,9 +335,13 @@
 
 <script>
 	$('.handle').on('click',function(){
-		$('nav ul').toggleClass('showing');
+		//$('nav ul').toggleClass('showing');
+        $("#sidebar-wrapper").toggleClass("active");
 	});
-  
+      $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
   $(document).ready(function(){
       $('.parallax').parallax();
     });

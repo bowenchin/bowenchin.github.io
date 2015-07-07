@@ -244,18 +244,13 @@ body {
 nav ul{
 	overflow: hidden;
 	color: #37474F;
-  font-size: 16px;
+    font-size: 16px;
 	padding: 0;
 	text-align: right;
 	margin: 0px;
 	z-index : 100;
 	position: absolute;
 	width:100%; 
-  -webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
 }
 
 nav ul li:a{
@@ -273,55 +268,120 @@ nav ul li:hover{
   color:#29b6f6;
 }
 
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top:-5px;
+    width: 200px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #222;
+    opacity:.95;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: -5px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    color: white;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    width: 250px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+    color:white;
+}
+
+#sidebar-wrapper.active {
+    left: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+.close-button{
+    position: relative;
+    top:25px;
+    left:200px;
+    z-index:5;
+}
+.close-button img{
+    width:30px;
+    height:30px;
+}
+
 section{
-	width: 100%;
-  margin-top:10px;
-  margin-left:auto;
-  margin-right:auto;
-  line-height:1.5em;
+    width: 100%;
+    margin-top:10px;  
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.5em;
 }
 
 .handle{
-	width: 6em;
-	text-align: center;
-  font-size:16px;
+	text-align: left;
+    text-decoration: bold;
+    font-size:1.7em;
 	box-sizing: border-box;
-	padding: 10px 10px;
+	padding: 10px;
+    margin-left: 25px;
+    margin-top:10px;
 	cursor: pointer;
-	color:#ccc;
-	display:none;
-	position:absolute;
-  z-index:100;
-  -webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	color:white;
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black; 
+	position:fixed;
+    z-index:100; 
 }
 
-@media screen and (max-width: 580px){
-	nav ul{
-		max-height: 0px;
-    width:6em;
-	}
-	.showing{
-		background: #ccc;
-    max-height: 40em;
-    text-align: center;
-    top:45px;
-    width:6em;
-    position:fixed;
-
-	}
-	nav ul li{
-		box-sizing: border-box;
-		width: 100%;
-		padding: 10px;
-    text-align:center;
-	}
-  .handle{
-		display: block;
-	}
+@media screen and (max-width: 520px){
+	#hori-nav{
+        display: none;
+    }
 }
 
 header {
@@ -411,8 +471,9 @@ p {
 	background-color: white;
   color:black;
 	width: 75%;
-	margin: 0 auto 20px;
-  margin-bottom:75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:75px;
   margin-top:75px;
 	z-index: 0;
 }
@@ -441,13 +502,13 @@ p {
 }
 
 .map{
-    width:80%;
-    margin-left: 20%;
+    width:75%;
+    height: 480px;
+    margin-left: auto;
     margin-right: auto;
     position: relative;
     z-index: 1;
     margin-top:20px;
-    display: inline-block;
 	
 }
 /*normal textBox*/
@@ -602,6 +663,7 @@ p {
 
 #content {
 	padding-bottom:75px; /* Height of the footer element */
+    width:100%;
 }
 
 #content-half{	
@@ -737,23 +799,36 @@ textarea {
 /*-------UNDER TEXT --------------*/
 .underText {
 	background: #263238;
-    width:65%;
-    padding:17.5%;
-	padding-top:4%;
-	padding-bottom:4%;
+    max-width:100%;
+    padding:50px;
+    padding-right:20%;
+    padding-left:20%;
 	-moz-transition: all 1s;
 	-webkit-transition: all 1s;
 	transition: all 1s;
     z-index:5;
     display:inline-block;
-	color: rgba(255,255,255,0.88);;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 200;
     font-size:18px;
-    text-align:justify;
+    text-align:left;
+    line-height: 1.5em;
     position:relative;
+    display: block;
     margin-left:auto;
     margin-right:auto;
+    color:white;
+    
+}
+
+.underText h4{
+    color:white;
+    line-height: 1.5em;
+}
+
+.underText h5{
+    color:white;
+    line-height: 1em;
 }
 
 .underText:hover {
