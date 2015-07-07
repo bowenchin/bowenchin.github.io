@@ -2,7 +2,7 @@ a{
  color:cornflowerblue;
 }
 body {
-  /*background-image: url('images/bg.jpg');*/
+  background-image: url('/images/landingpage.jpg');
   background-size: cover;
   background-attachment: fixed;
   /* FIXME: Temp. workaround for vertical scrollbars */
