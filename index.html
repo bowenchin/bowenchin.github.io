@@ -29,10 +29,11 @@
 
 
 <body>
-  <header class="layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header fixed-navbar">
+  <header class="layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <div class="mdl-layout__header mdl-layout__header--transparent">
       <div class="mdl-layout__header-row">
         <!-- Title -->
+        <div class="handle">&#9776;</div>
           <span class="mdl-layout-title"><a href="http://bowenchin.com"><img src="/icons/Personal Logo.png" height="45px"></a>&nbsp;&nbsp;|&nbsp;&nbsp;Personal Website</span>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
@@ -49,13 +50,27 @@
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title"><img src="/icons/Personal Logo.png" height="45px"></span>
       <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="http://bowenchin.com/#header/">Home</a>
-          <a class="mdl-navigation__link" href="http://bowenchin.com/#about/">About</a>
-          <a class="mdl-navigation__link" href="http://bowenchin.com/#interest/">Interests</a>
-          <a class="mdl-navigation__link" href="http://bowenchin.com/#project/">Projects</a>
-          <a class="mdl-navigation__link" href="http://bowenchin.com/#contact/">Contact</a>
+          <a class="mdl-navigation__link" href="http://bowenchin.com/#header/"><font color="cornflowerblue">Home</font></a>
+          <a class="mdl-navigation__link" href="http://bowenchin.com/#about/"><font color="cornflowerblue">About</font></a>
+          <a class="mdl-navigation__link" href="http://bowenchin.com/#interest/"><font color="cornflowerblue">Interest</font></a>
+          <a class="mdl-navigation__link" href="http://bowenchin.com/#project/"><font color="cornflowerblue">Project</font></a>
+          <a class="mdl-navigation__link" href="http://bowenchin.com/#contact/"><font color="cornflowerblue">Contact</font></a>
       </nav>
     </div>
+    <nav id="sidebar-wrapper" class="toggle">
+        <a id="menu-close" href="#" class="toggle close-button"><i><img src="icons/exit-button.png"></i></a>
+     	<ul class="sidebar-nav">
+     		 <li class="sidebar-brand">
+               Navigation 菜單
+           </li>
+           <a href="#header" class="smoothScroll" onclick = $("#menu-close").click();><li>Home</li></a>
+     		<a href="#about" class="smoothScroll" onclick = $("#menu-close").click();><li>About</li></a>
+     		<a href="#interest" class="smoothScroll" onclick = $("#menu-close").click();><li>Interests</li></a>
+     		<a href="#project" class="smoothScroll" onclick = $("#menu-close").click();><li>Projects</li></a>
+     		<a href="#contact" class="smoothScroll" onclick = $("#menu-close").click();><li>Contact</li></a>
+     	</ul>
+
+     </nav>
   </div>
 
   <!--<nav id="hori-nav">
@@ -83,12 +98,12 @@
 
   </nav>-->
   <a name="header"></a>
-  <header>
+  <div class="header">
     <h1 class="home">Hello, I'm Bowen Chin</h1>
       <br></br>
     <h3 class="home_small">Scroll down to learn more about me.</h3>
     <div class="arrow_down"><a href="#about"><img src="/icons/expand-more.svg" alt="scroll down"></a></div>
-  </header>
+  </div>
 
  <div id="content">
  <!--ABOUT SECTION-->

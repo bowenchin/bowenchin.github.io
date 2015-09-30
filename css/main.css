@@ -373,7 +373,7 @@ section{
     font-size:1.7em;
 	box-sizing: border-box;
 	padding: 10px;
-    margin-left: 25px;
+    margin-left: -50px;
     margin-top:10px;
 	cursor: pointer;
 	color:white;
@@ -389,7 +389,14 @@ section{
     }
 }
 
-header {
+.mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+  position: fixed;
+}
+
+.header {
   height: 100vh;
   background-color: white;
   background-image: url("/images/landingpage.jpg");
