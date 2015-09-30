@@ -29,7 +29,38 @@
 
 
 <body>
-  <nav id="hori-nav">
+  <div class="layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+          <span class="mdl-layout-title"><a href="http://bowenchin.com"><img src="/icons/Personal Logo.png" height="45px"></a>&nbsp;&nbsp;|&nbsp;&nbsp;Personal Website</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link smoothScroll" href="#header">Home</a>
+          <a class="mdl-navigation__link smoothScroll" href="#about">About</a>
+          <a class="mdl-navigation__link smoothScroll" href="#interest">Interests</a>
+          <a class="mdl-navigation__link smoothScroll" href="#project">Projects</a>
+          <a class="mdl-navigation__link smoothScroll" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title"><img src="/icons/Personal Logo.png" height="45px"></span>
+      <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="http://bowenchin.com/#header/">Home</a>
+          <a class="mdl-navigation__link" href="http://bowenchin.com/#about/">About</a>
+          <a class="mdl-navigation__link" href="http://bowenchin.com/#interest/">Interests</a>
+          <a class="mdl-navigation__link" href="http://bowenchin.com/#project/">Projects</a>
+          <a class="mdl-navigation__link" href="http://bowenchin.com/#contact/">Contact</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+    </main>
+  </div>
+
+  <!--<nav id="hori-nav">
   	<ul>
   		<a href="#header" class="smoothScroll"><li>Home</li></a>
   		<a href="#about" class="smoothScroll"><li>About</li></a>
@@ -52,10 +83,10 @@
   		<a href="#contact" class="smoothScroll" onclick = $("#menu-close").click();><li>Contact</li></a>
   	</ul>
 
-  </nav>
+  </nav>-->
   <a name="header"></a>
   <header>
-    <h1 class="home">Hello, I'm Bowen</h1>
+    <h1 class="home">Hello, I'm Bowen Chin</h1>
       <br></br>
     <h3 class="home_small">Scroll down to learn more about me.</h3>
     <div class="arrow_down"><a href="#about"><img src="/icons/expand-more.svg" alt="scroll down"></a></div>
