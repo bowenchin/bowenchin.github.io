@@ -268,11 +268,6 @@ nav ul li:hover{
   color:#29b6f6;
 }
 
-.fixed-navbar{
-  position:fixed;
-  z-index: 1000;
-}
-
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -313,7 +308,7 @@ nav ul li:hover{
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999;
+    color: cornflowerblue;
 }
 
 .sidebar-nav li a:hover {
@@ -369,18 +364,18 @@ section{
 
 .handle{
 	text-align: left;
-    text-decoration: bold;
-    font-size:1.7em;
-	box-sizing: border-box;
+  text-decoration: bold;
+  font-size:1.7em;
+  box-sizing: border-box;
 	padding: 10px;
-    margin-left: -50px;
-    margin-top:10px;
+  margin-left: -50px;
+  margin-top:11px;
 	cursor: pointer;
 	color:white;
-    -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 	position:fixed;
-    z-index:100;
+  z-index:1001;
 }
 
 @media screen and (max-width: 520px){
