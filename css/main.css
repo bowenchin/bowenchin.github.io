@@ -369,26 +369,25 @@ section{
   box-sizing: border-box;
 	padding: 10px;
   margin-left: -50px;
-  margin-top:11px;
+  margin-top:12px;
 	cursor: pointer;
 	color:white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-	position:fixed;
-  z-index:1001;
+	position:absolute;
+  z-index:2000;
+}
+
+@media screen and (max-width: 850px){
+	.handle{
+        margin-top:8px;
+    }
 }
 
 @media screen and (max-width: 520px){
 	#hori-nav{
         display: none;
     }
-}
-
-.mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: white;
-  position: fixed;
 }
 
 .header {
