@@ -37,7 +37,7 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: .67em 0; 
+  margin: .67em 0;
   color: black;
 }
 
@@ -62,7 +62,7 @@ sub {
 
 img {
   border: 0; }
-  
+
 svg:not(:root) {
   overflow: hidden; }
 
@@ -190,7 +190,7 @@ h3, h4, h5, h6{
   line-height: 1.2; }
 
 p {
-  margin: 0 0 20px 0; 
+  margin: 0 0 20px 0;
   line-height:1.5em;}
 
 em {
@@ -208,12 +208,12 @@ hr {
 
 a {
   color: inherit;
-  outline: 0; 
+  outline: 0;
   text-decoration:inherit;
   }
 
 a:hover, a:focus {
-  color: #1e46b4; 
+  color: #1e46b4;
   text-decoration: underline;
   }
 
@@ -250,7 +250,7 @@ nav ul{
 	margin: 0px;
 	z-index : 100;
 	position: absolute;
-	width:100%; 
+	width:100%;
 }
 
 nav ul li:a{
@@ -308,7 +308,7 @@ nav ul li:hover{
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999;
+    color: cornflowerblue;
 }
 
 .sidebar-nav li a:hover {
@@ -356,7 +356,7 @@ nav ul li:hover{
 
 section{
     width: 100%;
-    margin-top:10px;  
+    margin-top:10px;
     margin-left:auto;
     margin-right:auto;
     line-height:1.5em;
@@ -364,18 +364,24 @@ section{
 
 .handle{
 	text-align: left;
-    text-decoration: bold;
-    font-size:1.7em;
-	box-sizing: border-box;
+  text-decoration: bold;
+  font-size:1.7em;
+  box-sizing: border-box;
 	padding: 10px;
-    margin-left: 25px;
-    margin-top:10px;
+  margin-left: -50px;
+  margin-top:12px;
 	cursor: pointer;
 	color:white;
-    -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: black; 
-	position:fixed;
-    z-index:100; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+	position:absolute;
+  z-index:2000;
+}
+
+@media screen and (max-width: 850px){
+	.handle{
+        margin-top:8px;
+    }
 }
 
 @media screen and (max-width: 520px){
@@ -384,7 +390,7 @@ section{
     }
 }
 
-header {
+.header {
   height: 100vh;
   background-color: white;
   background-image: url("/images/landingpage.jpg");
@@ -410,6 +416,7 @@ header {
           align-items: center;
   text-align: center;
   z-index: 8;
+  line-height: 2;
 }
 
 .home{
@@ -419,6 +426,8 @@ header {
 	font-weight: lighter;
 	width: 100%;
 	z-index: 10;
+  line-height: 1em;
+  margin-bottom: -50px;
 }
 
 .home_small{
@@ -428,6 +437,7 @@ header {
 	font-weight: lighter;
 	width: 100%;
 	z-index: 10;
+  line-height: 1em;
 }
 p {
   margin: 0 auto 5px;
@@ -454,7 +464,7 @@ p {
   padding:10px;
 	z-index: 2;
   color:black;
-  background: #eceff1; 
+  background: #eceff1;
   -moz-box-shadow:    0px 5px 3px 0px #78909c;
   -webkit-box-shadow: 0px 5px 3px 0px #78909c;
   box-shadow:         0px 5px 3px 0px #78909c;
@@ -480,20 +490,33 @@ p {
 
 
 .socialMedia{
-	position: relative;
-	align-items: center;
-	justify-content: center;
-    text-align: center;
-}	
+    line-height: 0px;
+    -webkit-column-count: 3;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    3;
+    -moz-column-gap:      0px;
+    column-count:         3;
+    column-gap:           0px;
+    justify-content: center;
+    display: block;
+    margin: auto auto;
+        width: 60%;
+        border:3px solid #8AC007;
+        padding: 10px;
+        display: block;
+        display: block;
+   position: relative;
+   left: 5%;
+}
 
 
 .wideImage{
     width: 100%;
     position:relative;
-	z-index: 0;
+	   z-index: 0;
     display:block;
     justify-content:center;
-  
+
 }
 
 .module{
@@ -509,7 +532,13 @@ p {
     position: relative;
     z-index: 1;
     margin-top:20px;
-	
+}
+
+@media screen and (max-width: 480px) {
+    .map {
+        width: 100%;
+
+    }
 }
 /*normal textBox*/
 #textBox{
@@ -546,7 +575,7 @@ p {
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
 	transition: all 1s;
-  
+
 }
 
 #textBox-wide-lower{
@@ -570,13 +599,13 @@ p {
 
 #textBox-wide-lowest{
     position:absolute;
-    width:50%;
-	top:40%;
+    width:60%;
+	   top:40%;
     left:20%;
     right:20%;
-	padding:2%;
+	   padding:2%;
     border-radius:5px;
-	z-index: 2;
+	  z-index: 2;
     color:white;
     border-style: solid;
     border-width:2px;
@@ -624,6 +653,7 @@ p {
 	z-index: 2;
     text-align:center;
     color:white;
+    line-height: 1em;
 }
 
 .bigtextBoxTitle{
@@ -666,12 +696,18 @@ p {
     width:100%;
 }
 
-#content-half{	
+#content-half{
   padding-bottom:75px; /* Height of the footer element */
   width:75%;
   margin-right:auto;
   margin-left:auto;
   justify-content:center;
+}
+
+@media screen and (max-width: 480px) {
+    #content-half {
+        width: 100%;
+    }
 }
 
 #footer {
@@ -700,7 +736,7 @@ form {
 	color: black;
 	text-align: left;
 	font-size: 18px;
-	display: block;	
+	display: block;
 }
  input, textarea {
   border: 3px solid;
@@ -711,17 +747,17 @@ form {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-size: 16px;  
+  font-size: 16px;
 }
 
 textarea {
   height: 10em;
   resize: none;
-  
+
 }
  .submit-wrap {
   text-align: center;
-  
+
 }
  [type="submit"] {
   background: #448AFF;
@@ -744,7 +780,7 @@ textarea {
   -moz-box-shadow:    0px 0px 20px 5px #9E9E9E;
   -webkit-box-shadow: 0px 0px 20px 5px #9E9E9E;
   box-shadow:         0px 0px 20px 5px #9E9E9E;
-  
+
 }
 
  [type="submit"]:active {
@@ -753,32 +789,32 @@ textarea {
   -moz-box-shadow:    0px 0px 10px 10px #E0E0E0;
   -webkit-box-shadow: 0px 0px 10px 10px #E0E0E0;
   box-shadow:         0px 0px 10px 10px #E0E0E0;
-  
+
 }
 
  .contact-info-group label {
   width: 50%;
   float: left;
   box-sizing: border-box;
-  
+
 }
  .contact-info-group label:nth-child(1) {
   padding-right: 10px;
-  
+
 }
  .contact-info-group label:nth-child(2) {
   padding-left: 10px;
-  
+
 }
  label {
   display: block;
   margin-top: 10px;
   margin-bottom: 3px;
-  
+
 }
  label span {
   display: block;
-  
+
 }
 
 @media (max-width: 541px) {
@@ -801,24 +837,25 @@ textarea {
 	background: #263238;
     max-width:100%;
     padding:50px;
-    padding-right:20%;
-    padding-left:20%;
+    padding-right:15%;
+    padding-left:15%;
 	-moz-transition: all 1s;
 	-webkit-transition: all 1s;
 	transition: all 1s;
     z-index:5;
     display:inline-block;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 200;
     font-size:18px;
-    text-align:left;
     line-height: 1.5em;
     position:relative;
     display: block;
     margin-left:auto;
     margin-right:auto;
     color:white;
-    
+}
+
+.text-center {
+	text-align: center
 }
 
 .underText h4{
@@ -924,12 +961,12 @@ top:5%;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-  
+
   .collapsible {
   border-top: 2px solid #263238;
   border-right: 2px solid #263238;
   border-left: 2px solid #263238;
-  margin: 0.5rem 0 1rem 0; 
+  margin: 0.5rem 0 1rem 0;
   list-style-type: none;}
 
 .collapsible-header {
@@ -959,12 +996,12 @@ top:5%;
   border-bottom: 1px solid #ddd;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; 
-  
+  box-sizing: border-box;
+
   }
   .collapsible-body p {
     margin: 0;
-    padding: 1rem; 
+    padding: 1rem;
     color:black;}
 
 
@@ -981,7 +1018,7 @@ top:5%;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
     margin: 16px 0;
     transform: scaleX(1) translate3d(0, 0, 0); }
-    
+
 /*-----------Parallax Effect-----------*/
 .parallax-container {
   position: relative;
@@ -1005,7 +1042,7 @@ top:5%;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   transform: translateX(-50%); }
-  
+
 .arrow_down img{
   position: absolute;
   left: 50%;
