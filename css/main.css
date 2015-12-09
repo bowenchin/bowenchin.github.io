@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
@@ -372,8 +372,6 @@ section{
   margin-top:12px;
 	cursor: pointer;
 	color:white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 	position:absolute;
   z-index:2000;
 }
@@ -420,7 +418,7 @@ section{
 }
 
 .home{
-	font-size: 6em;
+	font-size: 5.5em;
 	color: #eceff1;
   opacity:.9;
 	font-weight: lighter;
@@ -438,6 +436,7 @@ section{
 	width: 100%;
 	z-index: 10;
   line-height: 1em;
+  margin-top: 50px;
 }
 p {
   margin: 0 auto 5px;
@@ -639,7 +638,7 @@ p {
 /*smaller textBoxTitle font*/
 .textBoxTitle{
 	font-size: 22px;
-	font-family: "Open Sans" sans-serif;
+	font-family: "Open Sans", sans-serif;
     font-weight: 100;
 	z-index: 2;
     text-align:center;
@@ -648,7 +647,7 @@ p {
 /*bigger textBoxTitle font*/
 .textBoxTitle-wide{
 	font-size: 45px;
-	font-family: "Open Sans" sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 200;
 	z-index: 2;
     text-align:center;
@@ -658,7 +657,7 @@ p {
 
 .bigtextBoxTitle{
 	font-size: 38px;
-	font-family: "Open Sans" sans-serif;
+	font-family: "Open Sans", sans-serif;
     font-weight: 100;
 	z-index: 2;
     text-align:center;
@@ -667,7 +666,7 @@ p {
 .contactTitle{
 	color: #000000;
 	font-size: 34px;
-	font-family: "Open Sans" sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 200;
 	text-align: center;
 	line-height: 100%;
@@ -676,7 +675,7 @@ p {
 
 .textBoxText{
 	font-size: 15px;
-	font-family: "Open Sans" sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 10;
   color:black;
 	z-index: 2;
@@ -684,7 +683,7 @@ p {
 
 .textBoxText-about{
 	font-size: 18px;
-	font-family: "Open Sans" sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 10;
 	z-index: 2;
   color:white;
@@ -844,7 +843,7 @@ textarea {
 	transition: all 1s;
     z-index:5;
     display:inline-block;
-	font-weight: 200;
+	font-weight: 400;
     font-size:18px;
     line-height: 1.5em;
     position:relative;
@@ -852,6 +851,7 @@ textarea {
     margin-left:auto;
     margin-right:auto;
     color:white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .text-center {
@@ -866,6 +866,7 @@ textarea {
 .underText h5{
     color:white;
     line-height: 1em;
+    font-weight: 400;
 }
 
 .underText:hover {
