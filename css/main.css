@@ -560,7 +560,7 @@ p {
 #textBox-wide{
 	position:absolute;
     width:50%;
-	top:15%;
+	  top:15%;
     left:20%;
     right:20%;
 	padding:2%;
@@ -580,7 +580,7 @@ p {
 #textBox-wide-lower{
     position:absolute;
     width:50%;
-	top:25%;
+	  top:25%;
     left:20%;
     right:20%;
 	padding:2%;
@@ -598,7 +598,7 @@ p {
 
 #textBox-wide-lowest{
     position:absolute;
-    width:60%;
+    width:50%;
 	   top:40%;
     left:20%;
     right:20%;
@@ -642,7 +642,6 @@ p {
     font-weight: 100;
 	z-index: 2;
     text-align:center;
-    text-align:left;
 }
 /*bigger textBoxTitle font*/
 .textBoxTitle-wide{
