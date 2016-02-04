@@ -427,18 +427,6 @@ section{
   margin-left: 15%;
 }
 
-.home_small{
-  max-width: 100%;
-	font-size: 1.2em;
-  color: #eceff1;
-	opacity: .9;
-	font-weight: medium;
-	z-index: 10;
-  line-height: 0em;
-  text-align: left;
-  display: inline-block;
-}
-
 .headerText {
     color:white;
     opacity: .9;
