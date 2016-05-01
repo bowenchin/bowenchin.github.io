@@ -268,10 +268,15 @@ nav ul li:hover{
   color:#29b6f6;
 }
 
+.mdl-layout__drawer{
+  z-index: 100;
+  opacity: 1;
+}
+
 /* Side Menu */
 
 #sidebar-wrapper {
-    z-index: 1000;
+    z-index: 100;
     position: fixed;
     left: 0;
     top:-5px;
@@ -365,7 +370,6 @@ section{
 .handle{
 	text-align: left;
   text-decoration: bold;
-  font-size:1.7em;
   box-sizing: border-box;
 	padding: 10px;
   margin-left: -50px;
@@ -376,9 +380,13 @@ section{
   z-index:2000;
 }
 
+.handle img{
+  height: 24px;
+}
+
 @media screen and (max-width: 850px){
 	.handle{
-        margin-top:8px;
+        margin-top:7px;
     }
 }
 
@@ -391,7 +399,8 @@ section{
 .header {
   height: 100vh;
   background-color: white;
-  background-image: url("/images/landingpage.jpg");
+  /*background-image: url("/images/landingpage.jpg"); */
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('/images/landingpage.jpg');
   background-size: cover;
   background-position: center;
   margin-bottom: 0px;
@@ -430,7 +439,7 @@ section{
 .headerText {
     color:white;
     opacity: .9;
-    z-index:100;
+    z-index:99;
 	  font-weight: 100;
     font-family: 'Open Sans', sans-serif;
     text-align: left;
