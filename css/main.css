@@ -350,13 +350,13 @@ nav ul li:hover{
 
 .close-button{
     position: relative;
-    top:25px;
+    top:33px;
     left:200px;
     z-index:5;
 }
 .close-button img{
-    width:30px;
-    height:30px;
+    width:19px;
+    height:19px;
 }
 
 section{
