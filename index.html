@@ -31,12 +31,12 @@
 
 
 <body>
-  <header class="layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
+   <header class="layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <div class="mdl-layout__header mdl-layout__header--transparent">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <div class="handle">&#9776;</div>
-          <span class="mdl-layout-title"><a href="http://bowenchin.com"><img src="/icons/Personal Logo.png" height="45px"></a>&nbsp;&nbsp;|&nbsp;&nbsp;Personal Website</span>
+        <div class="handle"><img src="/icons/hamburger.svg" alt=""></div>
+        <span class="mdl-layout-title"><a href="http://bowenchin.com"><img src="/icons/Personal Logo.png" height="45px"></a>&nbsp;&nbsp;|&nbsp;&nbsp;Personal Website</span>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
@@ -50,9 +50,7 @@
         </div>
       </div>
 
-    </header>
-
-  <div class="handle">&#9776;</div>
+  <div class="handle"><a id="nav-toggle" href="#"><span></span></a></div>
   <nav id="sidebar-wrapper" class="toggle">
     <a id="menu-close" href="#" class="toggle close-button"><i><img src="icons/exit-button.png"></i></a>
     <ul class="sidebar-nav">
@@ -66,6 +64,8 @@
      <a href="#contact" class="smoothScroll" onclick = $("#menu-close").click();><li>Contact</li></a>
     </ul>
   </nav>
+
+  </header>
 
   <!-- HEADER -->
   <a name="header"></a>
@@ -376,6 +376,8 @@
     }
   });
 });
+
+
 </script>
 </body>
 </html>
