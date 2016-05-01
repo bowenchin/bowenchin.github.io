@@ -368,12 +368,12 @@ section{
 }
 
 .handle{
+  position: absolute;
 	text-align: left;
   text-decoration: bold;
   box-sizing: border-box;
 	padding: 10px;
   margin-left: -50px;
-  margin-top:12px;
 	cursor: pointer;
 	color:white;
 	position:absolute;
@@ -382,12 +382,6 @@ section{
 
 .handle img{
   height: 24px;
-}
-
-@media screen and (max-width: 850px){
-	.handle{
-        margin-top:7px;
-    }
 }
 
 @media screen and (max-width: 520px){
