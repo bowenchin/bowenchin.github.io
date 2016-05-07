@@ -350,13 +350,13 @@ nav ul li:hover{
 
 .close-button{
     position: relative;
-    top:25px;
+    top:33px;
     left:200px;
     z-index:5;
 }
 .close-button img{
-    width:30px;
-    height:30px;
+    width:19px;
+    height:19px;
 }
 
 section{
@@ -368,12 +368,12 @@ section{
 }
 
 .handle{
+  position: absolute;
 	text-align: left;
   text-decoration: bold;
   box-sizing: border-box;
 	padding: 10px;
   margin-left: -50px;
-  margin-top:12px;
 	cursor: pointer;
 	color:white;
 	position:absolute;
@@ -382,12 +382,6 @@ section{
 
 .handle img{
   height: 24px;
-}
-
-@media screen and (max-width: 850px){
-	.handle{
-        margin-top:7px;
-    }
 }
 
 @media screen and (max-width: 520px){
