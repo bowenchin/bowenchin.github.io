@@ -110,12 +110,18 @@ background-color: #2979FF !important;
 }
 
 .text-primary {
-color: #2979FF !important;
+color: #ff4b5a !important;
 }
 
 a {
 color: #2962FF;
 }
-  a:hover, a:focus, a:active {
-  color: #0D47A1;
-  }
+
+a:hover, a:focus, a:active {
+color: #0D47A1;
+}
+
+#intro-text {
+  font-size: 1.2em;
+  color: #343a40;
+}
